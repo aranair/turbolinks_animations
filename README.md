@@ -1,5 +1,3 @@
-# TurbolinksTransition
-
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -14,21 +12,22 @@ And then execute:
 
 - Add class `js-turbolink-content` to any element, for example, in the master container 
 div in your page: 
-- Add a data attribute called `animation` to the same div e.g. data-animations="slide-left"
+- Add a data attribute `animation` to the same div e.g. data-animation="slide-left"
 - Possible values for animations right now are `slide-left`, `slide-right`, `fade`
 - When sliding left or right, the transition will be automatically reversed on restoration of the same element.
+- You can have specify different divs for the transition on every page but different animations are still a little buggy.
 
+
+## Example
 ```erb
-<div class="js-turbolink-content container" data-animations="slide-right">
+<div class="js-turbolink-content container" data-animation="slide-right">
   <%= yield %>
 </div>
 ```
 
-Dependencies: 
+## Dependencies
 - jQuery
-- jQuery ui
-
-Thats all!
+- jQuery UI
 
 ## Contributing
 
